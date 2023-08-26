@@ -1,0 +1,70 @@
+/* Pseudo Element Property on CSS
+Before visiting a link on Web Page by using Pseudo Property */
+
+a:link{
+    background-color:olive;
+    color: aqua;
+}
+
+/* On clicking the link */
+a:active{
+    color: darkred;
+    background-color:violet;
+}
+
+/* After visiting the link on web page */
+
+ a:visited{
+    background-color: indianred !important;
+    color: green;
+} 
+
+/* Hover Effect */
+
+a:hover{
+    background-color: aqua;
+    color: brown;
+}
+
+/* Before applying Focus to input tag */
+
+#sample{
+    background-color: royalblue;
+    color: black;
+}
+
+/* By applying CSS to Input type box */
+
+.name1:focus{
+    background-color: aqua;
+    color: red;
+}
+
+/* Example for Child Elements */
+
+div{
+    background-color:antiquewhite;
+    color:yellow;
+}
+p{
+    color: rgba(0, 0, 0, 0.801);
+    text-align: justify;
+}
+
+/* Changes the color to the first child of each paragraph even as paragraph and the div tag also */
+p:first-child
+{
+    color: blue;
+    background-color: orangered;
+}
+
+/* It will cahnges only the last child of the paragraph in div tag alone */
+p:last-child{
+    background-color: mediumvioletred;
+    color: lightsalmon;
+}
+/* It will changes the color according to the given div tag and the paragraph tag */
+p:nth-child(2){
+    background-color: firebrick;
+    color: purple;
+}
